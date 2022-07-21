@@ -70,6 +70,22 @@
                 Finally, zip this folder, upload the zipped folder to the google colab notebook, and execute.
                 </p>
              <p> <strong> Transformer Models </strong> </p>
-                <p> 
+                <p> Before jumping into using the google colab notebook, it may be helpful to watch https://www.youtube.com/watch?v=7kLi8u2dJz0 for a basic introduction to 
+                BERT and/or https://www.youtube.com/watch?v=OyFJWRnt_AY for a more formal discussion of transformer networks and attention layers. This model utilizes the 
+                tranformers library which enables us to easily fine-tune pre-trained models. The steps below outline how to find a pre-trained model and use this in your 
+                model:
+                </p>
+                <p>
+                  <ol>
+                    <li>Visit the HuggingFace hub at https://huggingface.co/ and select the models tab. This interface provides many pre-trained models available for use.                       </li>
+                    <li>Select one of these models. Next to the name of the model is a symbol to copy name to clipboard (click this). </li>
+                    <li>Open the google colab notebook and find the line of code: tokenizer = AutoTokenizer.from_pretrained('microsoft/deberta-base'). This is where you 
+                    will paste the info copied to the clipboard. Note: for my model, leave this as 'microsoft/deberta-base' (I did not include the tokenizer in my model 
+                    card).
+                    </li>
+                    <li>Find the line of code: model = TFAutoModelForSequenceClassification.from_pretrained("HereBeCode/deberta-fine-tuned-abortion-stance-detect", 
+                    num_labels=3) and paste the info saved to the clipboard here as well.
+                    </li>
+                    <li> That's it, you are ready to run the code. </li>
                 </p>
 </blockquote>
