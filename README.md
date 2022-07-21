@@ -56,3 +56,20 @@
                 efficient alterations (i.e. if you want to change the train_test_split %, etc.)
                 </p>
 </blockquote>
+
+<h3>3. Models </h3>
+<p> Descriptions of use for SVM, BiLSTM, and transformer models. </p>
+<blockquote> <p> <strong> SVM </strong> </p>
+                <p> This model is straight foward and simply requires a .csv file containing your dataset. Upload this dataset to the google colab notebook and execute.
+                </p>
+             <p> <strong> BiLSTM </strong> </p>
+                <p> This model follows the tensorflow/keras tutorials found at https://www.tensorflow.org/tutorials/keras/text_classification and 
+                https://www.tensorflow.org/text/tutorials/text_classification_rnn. Thus, this model utilizes 4-prepareDatasetForBiLSTMModel.py and 
+                5-clearDatasetForDeepLearning.py to prepare and structure the dataset as outlined in the tutorials. Feel free to alter/add/delete layers in the model to see 
+                if the model improves. Following the execution of 4-prepareDatasetForBiLSTMModel.py, search the directory for the folder containing your structured dataset. 
+                Finally, zip this folder, upload the zipped folder to the google colab notebook, and execute.
+                </p>
+             <p> <strong> Transformer Models </strong> </p>
+                <p> 
+                </p>
+</blockquote>
